@@ -1,0 +1,67 @@
+/* ====== COMPARACIÓN DE METODOLOGÍAS ====== */
+
+.comparacion-metodologias {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.comparacion-metodologias h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Grid para organizar 2 columnas */
+.comparacion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Columnas */
+.comparacion-grid .columna {
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    background: #ffffff;
+    transition: transform .2s ease;
+}
+
+.comparacion-grid .columna:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos */
+.comparacion-grid .columna h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Listas */
+.comparacion-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparacion-grid ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Estilos específicos para cada lado */
+.si-usas {
+    border-left: 6px solid #4CAF50; /* Verde positivo */
+}
+
+.no-usas {
+    border-left: 6px solid #E53935; /* Rojo negativo */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .comparacion-grid {
+        grid-template-columns: 1fr;
+    }
+}
